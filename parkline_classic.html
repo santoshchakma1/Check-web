@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Parkline Classic - 24 Hour Restaurant in Agartala | Best Dining Experience</title>
+    <meta name="description" content="The Parkline Classic - 24 hour restaurant in Agartala serving delicious food. 4.5 stars rated. Open 24 hours. Call 070058 52954 or visit us today!">
+    <meta name="keywords" content="restaurant Agartala, 24 hour restaurant, food delivery Agartala, dining Agartala">
+    <meta property="og:title" content="The Parkline Classic - 24 Hour Restaurant in Agartala">
+    <meta property="og:description" content="Experience great food at The Parkline Classic. Open 24 hours. 4.5 star rating with 675 reviews.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=The+Parkline+Classic">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Garamond', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        /* Color Scheme
+           Primary: #1a3a52 (Navy)
+           Secondary: #d4a574 (Gold)
+           Background: #f5f5f5 (Light Cream)
+           Accent: #ffffff (White)
+        */
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #d4a574;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+
+        .header-info {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .header-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #d4a574;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 58, 82, 0.88), rgba(26, 58, 82, 0.88)), 
+                        url('https://images.unsplash.com/photo-1504674900152-b8b29e94345b?w=1200') center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-family: 'Georgia', serif;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #d4a574;
+        }
+
+        .rating-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 18px 35px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+        }
+
+        .rating-badge .stars {
+            color: #d4a574;
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
+
+        .rating-text {
+            margin-top: 8px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .btn {
+            padding: 13px 35px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: #d4a574;
+            color: #1a3a52;
+        }
+
+        .btn-primary:hover {
+            background: #e8b88d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid #d4a574;
+        }
+
+        .btn-secondary:hover {
+            background: #d4a574;
+            color: #1a3a52;
+        }
+
+        /* Info Cards */
+        .info-section {
+            max-width: 1200px;
+            margin: -60px auto 50px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .info-card {
+            background: white;
+            padding: 35px;
+            border-radius: 4px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            border-top: 4px solid #d4a574;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transform: translateY(-3px);
+        }
+
+        .info-card h3 {
+            color: #1a3a52;
+            margin-bottom: 12px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .info-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .info-card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #d4a574;
+        }
+
+        /* About Section */
+        .about {
+            background: #f5f5f5;
+            padding: 70px 20px;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 38px;
+            color: #1a3a52;
+            text-align: center;
+            margin-bottom: 45px;
+            position: relative;
+            padding-bottom: 25px;
+            font-family: 'Georgia', serif;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #d4a574;
+            border-radius: 2px;
+        }
+
+        .about-text {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .gallery-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            height: 260px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #1a3a52 0%, #0f1f2e 100%);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-title::after {
+            background: #d4a574;
+        }
+
+        .contact-info {
+            margin: 45px 0;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+
+        .contact-info a {
+            color: #d4a574;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: #d4a574;
+        }
+
+        .address-box {
+            background: rgba(212, 165, 116, 0.15);
+            padding: 25px;
+            border-radius: 4px;
+            margin: 25px 0;
+            border-left: 4px solid #d4a574;
+        }
+
+        .address-box h3 {
+            margin-bottom: 12px;
+            color: #d4a574;
+        }
+
+        /* Hours */
+        .hours-badge {
+            display: inline-block;
+            background: rgba(212, 165, 116, 0.2);
+            padding: 16px 32px;
+            border-radius: 4px;
+            margin: 25px 0;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #d4a574;
+        }
+
+        .open-24 {
+            background: #d4a574;
+            color: #1a3a52;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-left: 12px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* Reviews Highlight */
+        .reviews-highlight {
+            background: #f5f5f5;
+            padding: 70px 20px;
+        }
+
+        .reviews-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .review-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 35px;
+            border-radius: 4px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #d4a574;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #d4a574;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #1a3a52;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f1f2e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #d4a574;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .header-info {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .cta-buttons {
+                gap: 10px;
+            }
+
+            .btn {
+                padding: 11px 25px;
+                font-size: 14px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .gallery-item {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 15px;
+                min-height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .info-section {
+                grid-template-columns: 1fr;
+                margin-top: -30px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header-info {
+                gap: 8px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">✦ THE PARKLINE CLASSIC ✦</div>
+            <div class="header-info">
+                <span>⭐ 4.5 Stars • 675 Reviews</span>
+                <span>🕐 Open 24 Hours</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="rating-badge">
+            <div class="stars">★ ★ ★ ★ ☆</div>
+            <div class="rating-text">Exceptional Dining • 4.5 Rating • 675 Guests</div>
+        </div>
+        
+        <h1>The Parkline Classic</h1>
+        <p class="hero-subtitle">Premier Fine Dining & Hospitality</p>
+        
+        <div class="cta-buttons">
+            <a href="tel:07005852954" class="btn btn-primary">📞 Call Now</a>
+            <a href="https://wa.me/917005852954" class="btn btn-primary" target="_blank">💬 WhatsApp</a>
+            <a href="https://maps.google.com/?q=The+Parkline+Classic+Agartala" class="btn btn-secondary" target="_blank">📍 Get Directions</a>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-section">
+        <div class="info-card">
+            <div class="icon">🕐</div>
+            <h3>Round-The-Clock Service</h3>
+            <p>Exceptional dining and hospitality available 24 hours a day</p>
+        </div>
+        <div class="info-card">
+            <div class="icon">📍</div>
+            <h3>Prestigious Location</h3>
+            <p>Located in Indranagar, Agartala's premier dining destination</p>
+        </div>
+        <div class="info-card">
+            <div class="icon">⭐</div>
+            <h3>Award-Winning Service</h3>
+            <p>Trusted by 675+ guests with an exceptional 4.5-star rating</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Our Establishment</h2>
+            <p class="about-text">
+                The Parkline Classic represents the pinnacle of fine dining and hospitality in Agartala. 
+                Our commitment to excellence is reflected in every aspect of our service—from our meticulously 
+                curated cuisine to our thoughtfully designed ambiance. With round-the-clock service and a 
+                dedicated team of professionals, we ensure that each guest enjoys an unforgettable culinary journey.
+                <br><br>
+                Whether you visit us for an intimate dinner, a business celebration, or a casual meal, 
+                The Parkline Classic delivers uncompromising quality and warm hospitality at every moment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-content">
+            <h2 class="section-title">Our Food Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Delicious biryani dish">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565958011504-34d3d3eaea1e?w=400" alt="Fresh grilled meat">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Appetizers and starters">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585238341710-4b4971ff975b?w=400" alt="Delicious desserts">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Beverage collection">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Restaurant ambiance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Highlight -->
+    <section class="reviews-highlight">
+        <div class="reviews-content">
+            <h2 class="section-title">Guest Testimonials & Recognition</h2>
+            <div class="review-stats">
+                <div class="stat-box">
+                    <div class="stat-number">4.5</div>
+                    <div class="stat-label">Excellence Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">675</div>
+                    <div class="stat-label">Guest Reviews</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">336</div>
+                    <div class="stat-label">Photo Gallery</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Hospitality</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-content">
+            <h2 class="section-title">Visit Our Restaurant</h2>
+            
+            <div class="address-box">
+                <h3>Our Distinguished Location</h3>
+                <p>Lenine Sharoni, A, Orient Chowmuhani<br>
+                   Jacksan Gate, K. Road<br>
+                   Indranagar, Agartala, Tripura 799001</p>
+            </div>
+
+            <div class="hours-badge">
+                ⏰ Open Round-The-Clock
+                <span class="open-24">24 HOURS</span>
+            </div>
+
+            <div class="contact-info">
+                <p>Telephone: <a href="tel:07005852954">070058 52954</a></p>
+                <p>WhatsApp: <a href="https://wa.me/917005852954" target="_blank">Send us a message</a></p>
+                <p>Navigate: <a href="https://maps.google.com/?q=The+Parkline+Classic+Agartala" target="_blank">View on Google Maps</a></p>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="tel:07005852954" class="btn btn-secondary">📞 Call Reservation</a>
+                <a href="https://wa.me/917005852954" class="btn btn-secondary" target="_blank">💬 WhatsApp us</a>
+                <a href="https://maps.google.com/?q=The+Parkline+Classic+Agartala" class="btn btn-secondary" target="_blank">📍 Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2024 The Parkline Classic. All rights reserved. | Excellence in Every Service</p>
+            <p style="margin-top: 10px; font-size: 12px; opacity: 0.7;">Professional Web Design by Santosh Chakma</p>
+        </div>
+    </footer>
+
+    <!-- Schema Markup (For Google SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Parkline Classic",
+      "image": "https://via.placeholder.com/1200x630?text=The+Parkline+Classic",
+      "description": "24 hour restaurant in Agartala serving delicious food with 4.5 star rating",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lenine Sharoni, A, Orient Chowmuhani, Jacksan Gate, K. Road",
+        "addressLocality": "Indranagar, Agartala",
+        "addressRegion": "Tripura",
+        "postalCode": "799001",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-7005852954",
+      "priceRange": "₹₹",
+      "cuisineType": "Multi-cuisine",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "675"
+      },
+      "url": "https://yourwebsite.com"
+    }
+    </script>
+
+</body>
+</html>
